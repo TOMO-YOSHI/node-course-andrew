@@ -1,5 +1,14 @@
-const add = require("./utils");
+// const validator = require("validator");
+const chalk = require("chalk");
+const newFunction = require("./notes");
 
-const sum = add(4, -2);
+const msg = newFunction();
 
-console.log(sum);
+// console.log(msg);
+
+
+const greenMsg = chalk.bold.bgRed.green("Success!!");
+console.log(greenMsg);
+
+// console.log(chalk.red("Hello", chalk.underline.bold.bgBlue("world") + "!"));
+// console.log(validator.isURL("https:/mead.io"));
